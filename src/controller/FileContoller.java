@@ -5,15 +5,10 @@ import java.io.IOException;
 
 public class FileContoller {
 
-    public void createFile(String path) {
-        // path -> src/resources
-        // fichero logico -> solo existe en memoria
-        File file = new File(path+"file.txt");
-        try {
-            file.createNewFile();
-        } catch (IOException e) {
-            System.out.println("Error, no existe el path");
-        }
+    private String basePath = "src/resources/";
+
+    public void crearFichero(String path) {
+
     }
 
 
